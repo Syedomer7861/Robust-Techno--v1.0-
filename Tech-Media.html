@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en" class="has-smooth-scroll">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/Robust Tech logo-lowsize02.png"
+    />
+    <link rel="stylesheet" href="/css/tech-media.css" />
+    <!-- Add Locomotive Scroll CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <title>Robust-Techno | Tech-Media</title>
+  </head>
+  <body class="tech-media-body">
+    <main data-scroll-container>
+      <header data-scroll-section>
+        <nav class="navbar">
+          <div class="logo">
+            <a href="/index.html"
+              ><img src="/assets/Robust Tech logo-01.png" alt="Robust-Techno"
+            /></a>
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/About-us.html">About Us</a></li>
+              <li><a href="/Contact-Us.html">Contact Us</a></li>
+              <li><a href="/Tech-Media.html" class="active">Tech-Media</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <section class="tech-media-hero-section" data-scroll-section>
+        <h4>2020</h4>
+        <div class="hero01">
+          <h1>Robust</h1>
+
+          <spline-viewer
+          class="spline-viewer"
+
+            url="https://prod.spline.design/v2EZG2841uDk7vQQ/scene.splinecode"
+          ></spline-viewer>
+          <div class="cover"></div>
+        </div>
+
+        <div class="hero02">
+          <h1>
+            <i class="ri-corner-left-down-fill"></i>
+            <span>Tech</span> Media
+          </h1>
+        </div>
+      </section>
+
+      <!-- Testimonial Section  -->
+
+      <section class="testimonial-section" data-scroll-section>
+        <div class="testimonial-title" data-splitting>
+          <h2>What Our Clients Say</h2>
+        </div>
+        <div class="testimonial-carousel" id="testimonial-carousel">
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              "Robust-Techno transformed our IT infrastructure. Their team is
+              highly professional and responsive!"
+            </p>
+            <div class="testimonial-client">
+              <span class="client-name">Ava Smith</span>
+              <span class="client-role">CTO, FinEdge</span>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              "We saw a 40% boost in productivity after their digital solutions.
+              Highly recommended!"
+            </p>
+            <div class="testimonial-client">
+              <span class="client-name">Liam Johnson</span>
+              <span class="client-role">Operations Head, Medico</span>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              "Their creative team delivered a stunning website and branding.
+              Our online presence is stronger than ever."
+            </p>
+            <div class="testimonial-client">
+              <span class="client-name">Sophia Lee</span>
+              <span class="client-role">Marketing Lead, UrbanNest</span>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              "Excellent support and innovative solutions. Robust-Techno is our
+              go-to tech partner."
+            </p>
+            <div class="testimonial-client">
+              <span class="client-name">Noah Patel</span>
+              <span class="client-role">CEO, GreenGrid</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service Section -->
+      <section class="services-tabs-section" data-scroll-section>
+        <div class="services-tabs-header">
+          <span class="services-tabs-label">Our Expertise</span>
+          <h2 class="services-tabs-title">Creative Solutions</h2>
+          <p class="services-tabs-desc">
+            Transforming ideas into digital excellence through innovative design
+            and cutting-edge technology.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Graphics Design -->
+          <div class="service-card" data-service="graphicdesign">
+            <div class="service-card-inner">
+              <div class="service-card-front">
+                <video
+                  class="service-icon"
+                  src="/assets/icons/graphic designer icon01.mp4"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                ></video>
+                <h3>Graphics Design</h3>
+              </div>
+              <div class="service-card-back">
+                <p>
+                  We create stunning visuals that capture your brand's essence
+                  and leave a lasting impression.
+                </p>
+                <a href="/Contact-Us.html" class="service-btn"
+                  >Get Started <i class="ri-arrow-right-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- UI/UX Design -->
+          <div class="service-card" data-service="uiux">
+            <div class="service-card-inner">
+              <div class="service-card-front">
+                <video
+                  class="service-icon"
+                  src="/assets/icons/UI UX.mp4"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                ></video>
+                <h3>UI/UX Design</h3>
+              </div>
+              <div class="service-card-back">
+                <p>
+                  Creating intuitive and engaging user experiences that delight
+                  and convert visitors.
+                </p>
+                <a href="/Contact-Us.html" class="service-btn"
+                  >Get Started <i class="ri-arrow-right-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="service-card" data-service="webdev">
+            <div class="service-card-inner">
+              <div class="service-card-front">
+                <video
+                  class="service-icon"
+                  src="/assets/icons/Web developer.mp4"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                ></video>
+                <h3>Web Development</h3>
+              </div>
+              <div class="service-card-back">
+                <p>
+                  Building powerful, scalable websites and applications using
+                  cutting-edge technologies.
+                </p>
+                <a href="/Contact-Us.html" class="service-btn"
+                  >Get Started <i class="ri-arrow-right-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Digital Marketing -->
+          <div class="service-card" data-service="digitalmarketing">
+            <div class="service-card-inner">
+              <div class="service-card-front">
+                <video
+                  class="service-icon"
+                  src="/assets/icons/digital marking.mp4"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                ></video>
+                <h3>Digital Marketing</h3>
+              </div>
+              <div class="service-card-back">
+                <p>
+                  Strategic marketing solutions to boost your online presence
+                  and drive growth.
+                </p>
+                <a href="/Contact-Us.html" class="service-btn"
+                  >Get Started <i class="ri-arrow-right-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- SEO -->
+          <div class="service-card" data-service="seo">
+            <div class="service-card-inner">
+              <div class="service-card-front">
+                <video
+                  class="service-icon"
+                  src="/assets/icons/SEO icon.mp4"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                ></video>
+                <h3>SEO</h3>
+              </div>
+              <div class="service-card-back">
+                <p>
+                  Optimizing your digital presence to rank higher and attract
+                  more organic traffic.
+                </p>
+                <a href="/Contact-Us.html" class="service-btn"
+                  >Get Started <i class="ri-arrow-right-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photography -->
+          <div class="service-card" data-service="photography">
+            <div class="service-card-inner">
+              <div class="service-card-front">
+                <video
+                  class="service-icon"
+                  src="/assets/icons/Photography.mp4"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                ></video>
+                <h3>Photography</h3>
+              </div>
+              <div class="service-card-back">
+                <p>
+                  Professional photography services that tell your story through
+                  compelling visuals.
+                </p>
+                <a href="/Contact-Us.html" class="service-btn"
+                  >Get Started <i class="ri-arrow-right-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script>
+        // Initialize service cards
+        document.addEventListener("DOMContentLoaded", function () {
+          const serviceCards = document.querySelectorAll(".service-card");
+
+          serviceCards.forEach((card) => {
+            card.addEventListener("mouseenter", function () {
+              this.querySelector(".service-card-inner").style.transform =
+                "rotateY(180deg)";
+            });
+
+            card.addEventListener("mouseleave", function () {
+              this.querySelector(".service-card-inner").style.transform =
+                "rotateY(0deg)";
+            });
+
+            // Touch device support
+            card.addEventListener("touchstart", function (e) {
+              e.preventDefault();
+              const inner = this.querySelector(".service-card-inner");
+              inner.style.transform =
+                inner.style.transform === "rotateY(180deg)"
+                  ? "rotateY(0deg)"
+                  : "rotateY(180deg)";
+            });
+          });
+        });
+      </script>
+
+      <!-- Why Work with Robust-Techno -->
+      <section class="why-choose-us" data-scroll-section>
+        <div class="why-choose-us-header">
+          <span class="why-choose-us-label">Why Choose Us</span>
+          <h2 class="why-choose-us-title">The Robust-Techno Advantage</h2>
+          <p class="why-choose-us-desc">
+            Discover what sets us apart and why clients trust us with their most
+            critical projects.
+          </p>
+        </div>
+        <div class="why-choose-us-grid">
+          <div class="why-choose-us-item">
+            <i class="ri-lightbulb-line"></i>
+            <h3>Innovative Solutions</h3>
+            <p>
+              We leverage cutting-edge technology to deliver forward-thinking
+              and effective solutions tailored to your needs.
+            </p>
+          </div>
+          <div class="why-choose-us-item">
+            <i class="ri-team-line"></i>
+            <h3>Expert Team</h3>
+            <p>
+              Our team comprises highly skilled professionals with extensive
+              experience in various tech domains.
+            </p>
+          </div>
+          <div class="why-choose-us-item">
+            <i class="ri-hand-heart-line"></i>
+            <h3>Client-Centric Approach</h3>
+            <p>
+              Your success is our priority. We work closely with you to ensure
+              your vision becomes a reality.
+            </p>
+          </div>
+          <div class="why-choose-us-item">
+            <i class="ri-shield-check-line"></i>
+            <h3>Reliability & Support</h3>
+            <p>
+              We provide robust and reliable services with continuous support to
+              keep your operations running smoothly.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About section -->
+
+      <section class="about-us-section" data-scroll-section>
+        <h2>Our Story</h2>
+        <p>
+          Robust Techno is a leading IT solutions provider dedicated to
+          empowering businesses with cutting-edge technology and unparalleled
+          support. Founded on the principles of innovation, integrity, and
+          client success, we have grown into a trusted partner for organizations
+          seeking to optimize their IT infrastructure and achieve their
+          strategic goals.
+        </p>
+        <div class="about-cards-container">
+          <div class="about-card">
+            <h3>Our Vision</h3>
+            <p>
+              To be the foremost IT solutions provider, recognized for our
+              innovative approach, exceptional service, and unwavering
+              commitment to client success.
+            </p>
+          </div>
+          <div class="about-card">
+            <h3>Our Mission</h3>
+            <p>
+              To deliver robust, scalable, and secure IT solutions that drive
+              efficiency, foster growth, and provide a competitive edge for our
+              clients.
+            </p>
+          </div>
+          <div class="about-card">
+            <h3>Our Values</h3>
+            <p>
+              Innovation, Integrity, Client-Centricity, Excellence, and
+              Collaboration are the pillars of our operations, guiding every
+              decision and interaction.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="achievements-section" data-scroll-section>
+        <h2>Our Achievements</h2>
+        <p>
+          We take pride in our milestones and the positive impact we've made on
+          our clients' businesses.
+        </p>
+        <div class="achievements-grid">
+          <div class="achievement-item">
+            <div class="icon"><i class="fas fa-users"></i></div>
+            <h3>500+</h3>
+            <p>Satisfied Clients</p>
+          </div>
+          <div class="achievement-item">
+            <div class="icon"><i class="fas fa-project-diagram"></i></div>
+            <h3>1200+</h3>
+            <p>Projects Completed</p>
+          </div>
+          <div class="achievement-item">
+            <div class="icon"><i class="fas fa-award"></i></div>
+            <h3>10+</h3>
+            <p>Industry Awards</p>
+          </div>
+          <div class="achievement-item">
+            <div class="icon"><i class="fas fa-globe"></i></div>
+            <h3>5+</h3>
+            <p>Countries Served</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer data-scroll-section>
+        <div class="cover">
+          <div class="text">
+            <p>
+              Designed & Developed by
+              <a
+                href="https://syed-portfolio-one.vercel.app/"
+                target="_blank"
+                rel="noopener"
+                >Syed Omer 😊</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-link">
+          <div class="logo">
+            <a href="/index.html"
+              ><img src="/assets/Robust Tech logo-01.png" alt="Robust-Techno"
+            /></a>
+          </div>
+
+          <div class="link footer-section">
+            <h5 class="footer-toggle">Quick Links</h5>
+            <div class="footer-content">
+              <a href="/index.html">Home</a>
+              <a href="/About-us.html">About Us</a>
+              <a href="/Contact-Us.html">Contact Us</a>
+              <a href="/Tech-Media.html">Tech-Media</a>
+            </div>
+          </div>
+
+          <div class="service footer-section">
+            <h5 class="footer-toggle">Services</h5>
+            <div class="footer-content">
+              <a href="#what-we-offer">Reselling</a>
+              <a href="#what-we-offer">IT Consulting Services</a>
+              <a href="#what-we-offer">Managed IT Services</a>
+              <a href="#what-we-offer">Technical Support</a>
+              <a href="/services.html">Website Development</a>
+              <a href="/services.html">Digital Marketing</a>
+              <a href="/services.html">Graphic Design</a>
+              <a href="/services.html">SEO Services</a>
+              <a href="/services.html">UI/UX Design</a>
+              <a href="/services.html">Photography</a>
+            </div>
+          </div>
+
+          <div class="contact footer-section">
+            <h5 class="footer-toggle">Contact Us</h5>
+            <div class="footer-content">
+              <p>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+919876543210"> +91 9876543210</a>
+              </p>
+              <p>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:info@robusttechno.com">info@robusttechno.com</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="social-link footer-section">
+            <h5 class="footer-toggle">Social Links</h5>
+            <div class="footer-content">
+              <a
+                href="https://www.facebook.com/robusttechno"
+                target="_blank"
+                rel="noopener"
+                ><i class="fab fa-facebook-f"></i>Facebook</a
+              >
+              <a
+                href="https://www.instagram.com/robusttechno/"
+                target="_blank"
+                rel="noopener"
+                ><i class="fab fa-instagram"></i>Instagram</a
+              >
+              <a
+                href="https://twitter.com/robusttechno"
+                target="_blank"
+                rel="noopener"
+                ><i class="fab fa-twitter"></i>Twitter</a
+              >
+            </div>
+          </div>
+
+          <div class="address footer-section">
+            <h5 class="footer-toggle">Address</h5>
+            <div class="footer-content">
+              <p>
+                123 Main Street,<br />
+                City, <br />
+                State, <br />
+                Country
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+      <div class="transition">
+        <div class="transition-row row-1">
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+        </div>
+        <div class="transition-row row-2">
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+        </div>
+      </div>
+      <div class="app"></div>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.10.15/build/spline-viewer.js"
+    ></script>
+    <script src="/js/locomotive-setup.js"></script>
+    <script src="/js/animations.js"></script>
+    <script src="/js/transition.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
