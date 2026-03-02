@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Jha — Visual Designer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css">
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css">
+    <style>
+        /* Additional styles to match reference site */
+        .hero h1 {
+            font-size: 7rem;
+            font-weight: 700;
+            line-height: 0.9;
+        }
+        
+        .first-name, .last-name {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .profession-container {
+            margin: 30px 0 50px;
+        }
+        
+        .is-a {
+            font-size: 2.5rem;
+            font-weight: 400;
+            opacity: 0.8;
+        }
+        
+        .profession {
+            font-size: 3rem;
+            font-weight: 600;
+        }
+        
+        .availability p {
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        
+        .scroll-indicator {
+            margin-top: 80px;
+        }
+        
+        .about {
+            padding: 150px 10%;
+        }
+        
+        .about-content p {
+            font-size: 2rem;
+            line-height: 1.3;
+            font-weight: 600;
+        }
+        
+        .featured-works {
+            padding: 100px 10%;
+        }
+        
+        .featured-works h2 {
+            font-size: 3.5rem;
+        }
+        
+        .count {
+            font-size: 1.5rem;
+            opacity: 0.7;
+        }
+        
+        .work-item {
+            margin-bottom: 40px;
+            transition: transform 0.5s ease;
+        }
+        
+        .work-item:hover {
+            transform: translateY(-15px);
+        }
+        
+        .work-image {
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .work-image img {
+            transition: transform 0.7s ease;
+        }
+        
+        .work-item:hover .work-image img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body data-scroll-container>
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-inner"></div>
+        </div>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header data-scroll-section>
+        <div class="logo">
+            <a href="index.html">Abhishek Jha</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Socials</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://behance.net" target="_blank" rel="noopener">Behance</a></li>
+                        <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+                        <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a></li>
+                        <li><a href="https://dribbble.com" target="_blank" rel="noopener">Dribbble</a></li>
+                    </ul>
+                </li>
+                <li><a href="mailto:hi@abhishekjha.me" class="contact-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" data-scroll-section>
+            <div class="hero-content">
+                <h1 data-splitting>
+                    <span class="first-name">Abhishek</span>
+                    <span class="last-name">Jha</span>
+                </h1>
+                <div class="profession-container" data-scroll data-scroll-speed="1">
+                    <h2 class="is-a">is a</h2>
+                </div>
+                
+                <div class="designer-creative-section">
+                    <div class="section-content" data-scroll data-scroll-speed="0.5">
+                        <h2 class="section-title" data-splitting>Creative</h2>
+                        <div class="section-details">
+                            <p>Currently Available FOR Freelance Worldwide</p>
+                            <p class="local-time">My local Time <span id="current-time">12:00 GMT (+5:30)</span></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="designer-creative-section">
+                    <div class="section-content" data-scroll data-scroll-speed="0.7">
+                        <h2 class="section-title" data-splitting>Designer</h2>
+                        <div class="section-details">
+                            <p>Currently Available FOR Freelance Worldwide</p>
+                            <p class="local-time">My local Time <span id="current-time-2">12:00 GMT (+5:30)</span></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scroll-indicator" data-scroll data-scroll-speed="2">
+                    <img src="images/down-arrow.svg" alt="Scroll Down">
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about" data-scroll-section>
+            <div class="about-content" data-scroll data-scroll-speed="1">
+                <h2 data-splitting>About Myself</h2>
+                <p data-scroll data-scroll-speed="0.5">I am Abhishek Jha, I</p>
+                <p data-scroll data-scroll-speed="0.7">create unconventional</p>
+                <p data-scroll data-scroll-speed="0.9">yet functional &</p>
+                <p data-scroll data-scroll-speed="1.1">visually pleasing</p>
+                <p data-scroll data-scroll-speed="1.3">interfaces for the</p>
+                <p data-scroll data-scroll-speed="1.5">mobile and web.</p>
+                <a href="mailto:hi@abhishekjha.me" class="contact-button" data-scroll data-scroll-speed="1.7">
+                    <img src="images/contact-icon.svg" alt="Contact"> Contact
+                </a>
+            </div>
+            <div class="about-cards" data-scroll data-scroll-speed="-1">
+                <div class="card" data-scroll data-scroll-speed="0.5">
+                    <img src="https://abhishekjha.me/card1.a0552dbc.png" alt="User Experience">
+                </div>
+                <div class="card" data-scroll data-scroll-speed="0.7">
+                    <img src="https://abhishekjha.me/card2.cfc820ab.png" alt="Design">
+                </div>
+                <div class="card" data-scroll data-scroll-speed="0.9">
+                    <img src="https://abhishekjha.me/card3.b705d81b.png" alt="Development">
+                </div>
+            </div>
+            <div class="skills" data-scroll data-scroll-speed="1">
+                <h3 data-splitting>Things I Can Help you with.</h3>
+                <p data-scroll data-scroll-speed="0.5">Web & mobile / UI&UX / Branding / front-end Development</p>
+            </div>
+        </section>
+
+        <section class="featured-works" data-scroll-section>
+            <h2 data-scroll data-scroll-speed="1" data-splitting>Feat Works</h2>
+            <p class="count" data-scroll data-scroll-speed="1.2">(05)</p>
+            <div class="works-grid">
+                <a href="https://www.behance.net/gallery/150654767/AeiZei" target="_blank" rel="noopener" class="work-item" data-scroll data-scroll-speed="0.5">
+                    <div class="work-image">
+                        <img src="https://abhishekjha.me/aeizei.7edf201c.png" alt="Aeizei">
+                    </div>
+                    <div class="work-info">
+                        <div class="work-meta">
+                            <p>YEAR: 2020</p>
+                            <p>ROLE: UI/UX AND FRONT-END DEV</p>
+                        </div>
+                        <h3>Aeizei</h3>
+                    </div>
+                </a>
+                <a href="https://www.display.care/?ref=abhishek" target="_blank" rel="noopener" class="work-item" data-scroll data-scroll-speed="0.7">
+                    <div class="work-image">
+                        <img src="https://abhishekjha.me/display.835f9d62.png" alt="Display">
+                    </div>
+                    <div class="work-info">
+                        <div class="work-meta">
+                            <p>YEAR: 2021</p>
+                            <p>ROLE: UI/UX, BRANDING</p>
+                        </div>
+                        <h3>Display</h3>
+                    </div>
+                </a>
+                <a href="https://www.behance.net/gallery/126971133/Quiave-Design-Studio" target="_blank" rel="noopener" class="work-item" data-scroll data-scroll-speed="0.9">
+                    <div class="work-image">
+                        <img src="https://abhishekjha.me/quaive.6fc624fe.png" alt="Quaive">
+                    </div>
+                    <div class="work-info">
+                        <div class="work-meta">
+                            <p>YEAR: 2021</p>
+                            <p>ROLE: UI/UX AND FULL STACK DEV</p>
+                        </div>
+                        <h3>Quaive</h3>
+                    </div>
+                </a>
+                <a href="https://www.behance.net/gallery/98924861/Atolla-Website-Redesign-Muteza-Case-study" target="_blank" rel="noopener" class="work-item" data-scroll data-scroll-speed="1.1">
+                    <div class="work-image">
+                        <img src="https://abhishekjha.me/muteza.4faa619b.png" alt="Muteza">
+                    </div>
+                    <div class="work-info">
+                        <div class="work-meta">
+                            <p>YEAR: 2021</p>
+                            <p>ROLE: UI/UX AND FRONT-END DEV</p>
+                        </div>
+                        <h3>Muteza</h3>
+                    </div>
+                </a>
+                <a href="https://www.behance.net/gallery/106294567/Vis-a-Via" target="_blank" rel="noopener" class="work-item" data-scroll data-scroll-speed="1.3">
+                    <div class="work-image">
+                        <img src="https://abhishekjha.me/visavia4.631e000e.png" alt="Vis a Via">
+                    </div>
+                    <div class="work-info">
+                        <div class="work-meta">
+                            <p>YEAR: 2021</p>
+                            <p>ROLE: UI/UX</p>
+                        </div>
+                        <h3>Vis a Via</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="archive" data-scroll data-scroll-speed="0.5">
+                <h3 data-splitting>ARCHIVE</h3>
+                <ul>
+                    <li data-scroll data-scroll-speed="0.3"><a href="https://www.northofzero.dev/?ref=abhishek" target="_blank" rel="noopener">North of Zero</a></li>
+                    <li data-scroll data-scroll-speed="0.4"><a href="https://www.behance.net/gallery/125707939/Pulse-Assist" target="_blank" rel="noopener">Pulse</a></li>
+                    <li data-scroll data-scroll-speed="0.5"><a href="https://www.behance.net/gallery/94094919/Portfolio-Template" target="_blank" rel="noopener">Photo Folio</a></li>
+                    <li data-scroll data-scroll-speed="0.6"><a href="https://www.springflatsstay.org/" target="_blank" rel="noopener">Springflats Stay</a></li>
+                    <li data-scroll data-scroll-speed="0.7"><a href="https://www.behance.net/gallery/81156627/CHUU-Website-Redesign" target="_blank" rel="noopener">Chuu</a></li>
+                    <li data-scroll data-scroll-speed="0.8"><a href="https://strey.shop/?ref=abhishekjha.me" target="_blank" rel="noopener">Strey</a></li>
+                    <li data-scroll data-scroll-speed="0.9"><a href="https://www.behance.net/gallery/91793575/Abudezo-App" target="_blank" rel="noopener">Abudezo</a></li>
+                    <li data-scroll data-scroll-speed="1.0"><a href="#" target="_blank" rel="noopener">2020 Portfolio</a></li>
+                </ul>
+                <a href="about.html" class="see-more" data-scroll data-scroll-speed="1.2">See Playbook</a>
+            </div>
+        </section>
+
+        <section class="honors" data-scroll-section>
+            <h2 data-scroll data-scroll-speed="1" data-splitting>Honors</h2>
+            <p class="honors-subtitle" data-scroll data-scroll-speed="1.2">All of My past achievements,<br>awards and recognition.</p>
+            
+            <div class="featured-interview" data-scroll data-scroll-speed="0.5">
+                <a href="https://web.archive.org/web/20221026100137/https://www.editorx.com/shaping-design/article/abhishek-jha-designer-interview" target="_blank" rel="noopener" class="interview-link">
+                    <div class="interview-tag">Featured</div>
+                    <h3 data-splitting>Interview with Wix Editor X</h3>
+                    <img src="https://abhishekjha.me/headshot.d60093a0.JPG" alt="Abhishek Jha">
+                    <p>My journey of becoming a visual designer and my views on websites as a medium of expression.</p>
+                </a>
+            </div>
+            
+            <div class="awards-list">
+                <div class="award-item" data-scroll data-scroll-speed="0.3">
+                    <div class="award-info">
+                        <p class="award-project">for Display</p>
+                        <p class="award-year">2022</p>
+                        <p class="award-name">Awwwards SOTD</p>
+                    </div>
+                    <a href="https://www.awwwards.com/sites/display-studio" class="award-link" target="_blank" rel="noopener">
+                        <img src="images/new-tab.svg" alt="Visit">
+                    </a>
+                </div>
+                <div class="award-item" data-scroll data-scroll-speed="0.5">
+                    <div class="award-info">
+                        <p class="award-project">Interview</p>
+                        <p class="award-year">2021</p>
+                        <p class="award-name">Wix.com</p>
+                    </div>
+                    <a href="https://web.archive.org/web/20221026100137/https://www.editorx.com/shaping-design/article/abhishek-jha-designer-interview" class="award-link" target="_blank" rel="noopener">
+                        <img src="images/new-tab.svg" alt="Visit">
+                    </a>
+                </div>
+                <div class="award-item" data-scroll data-scroll-speed="0.7">
+                    <div class="award-info">
+                        <p class="award-project">for Quaive</p>
+                        <p class="award-year">2021</p>
+                        <p class="award-name">Orpetron SOTD</p>
+                    </div>
+                    <a href="https://orpetron.com/sites/quaive-studio/" class="award-link" target="_blank" rel="noopener">
+                        <img src="images/new-tab.svg" alt="Visit">
+                    </a>
+                </div>
+                <div class="award-item" data-scroll data-scroll-speed="0.9">
+                    <div class="award-info">
+                        <p class="award-project">for Muteza</p>
+                        <p class="award-year">2020</p>
+                        <p class="award-name">Awwwards</p>
+                    </div>
+                    <a href="https://www.awwwards.com/sites/skin-serum" class="award-link" target="_blank" rel="noopener">
+                        <img src="images/new-tab.svg" alt="Visit">
+                    </a>
+                </div>
+                <div class="award-item" data-scroll data-scroll-speed="1.1">
+                    <div class="award-info">
+                        <p class="award-project">Feature</p>
+                        <p class="award-year">2020</p>
+                        <p class="award-name">CSS Awards</p>
+                    </div>
+                    <a href="https://cssawardss.com/abhishek-jha" class="award-link" target="_blank" rel="noopener">
+                        <img src="images/new-tab.svg" alt="Visit">
+                    </a>
+                </div>
+                <div class="award-item" data-scroll data-scroll-speed="1.3">
+                    <div class="award-info">
+                        <p class="award-project">Mention</p>
+                        <p class="award-year">2020</p>
+                        <p class="award-name">Flux</p>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=R7aM6s-x1c0&t=369s" class="award-link" target="_blank" rel="noopener">
+                        <img src="images/new-tab.svg" alt="Visit">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" data-scroll-section>
+            <h2 data-scroll data-scroll-speed="1" data-splitting>Let's Talk</h2>
+            <p class="contact-subtitle" data-scroll data-scroll-speed="1.2">Connect About the Next big thing</p>
+            
+            <div class="contact-options" data-scroll data-scroll-speed="0.5">
+                <a href="mailto:hi@abhishekjha.me" class="contact-option" data-scroll data-scroll-speed="0.7">
+                    <span>Write a Message</span>
+                </a>
+                <a href="javascript:void(0)" class="contact-option" id="discuss-project" data-scroll data-scroll-speed="0.9">
+                    <span>Discuss Project</span>
+                </a>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://www.behance.net/abhishek_jha" target="_blank" rel="noopener" class="social-link" data-scroll data-scroll-speed="0.3">
+                    <span>Behance @abhishek_jha</span>
+                    <img src="images/behance.svg" alt="Behance">
+                </a>
+                <a href="https://www.instagram.com/design_flavorist/" target="_blank" rel="noopener" class="social-link" data-scroll data-scroll-speed="0.5">
+                    <span>Instagram @design_flavorist</span>
+                    <img src="images/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://twitter.com/designflavorist" target="_blank" rel="noopener" class="social-link" data-scroll data-scroll-speed="0.7">
+                    <span>Twitter @designflavorist</span>
+                    <img src="images/twitter.svg" alt="Twitter">
+                </a>
+                <a href="https://dribbble.com/abhishek_jha" target="_blank" rel="noopener" class="social-link" data-scroll data-scroll-speed="0.9">
+                    <span>Dribbble @abhishek_jha</span>
+                    <img src="images/dribbble.svg" alt="Dribbble">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer data-scroll-section>
+        <div class="footer-content" data-scroll data-scroll-speed="0.5">
+            <p class="copyright">©2025 Abhishek Jha, All rights reserved • <a href="#" id="credits-toggle">Credits</a></p>
+            <a href="#" class="archive-link">2020 Portfolio</a>
+        </div>
+        
+        <div class="credits-panel">
+            <div class="credits-content">
+                <div class="credits-close">
+                    <img src="images/close.svg" alt="Close">
+                </div>
+                <div class="credits-section">
+                    <h3 data-splitting>Technologies</h3>
+                    <p><a href="https://github.com/locomotivemtl/locomotive-scroll" target="_blank" rel="noopener">Locomotive Scroll,</a> <a href="https://highway.js.org/" target="_blank" rel="noopener">Highway.js,</a> <a href="https://greensock.com/gsap" target="_blank" rel="noopener">GSAP</a></p>
+                </div>
+                <div class="credits-section">
+                    <h3 data-splitting>Fonts</h3>
+                    <p><a href="http://collletttivo.it/" target="_blank" rel="noopener">Mazius,</a> <a href="https://www.tinkov.info/" target="_blank" rel="noopener">Gilroy</a></p>
+                </div>
+                <div class="credits-section">
+                    <h3 data-splitting>Designed and Developed By</h3>
+                    <p><a href="index.html">Abhishek Jha</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="contact-form-modal">
+        <div class="modal-close">
+            <img src="images/close.svg" alt="Close">
+        </div>
+        <div class="modal-content">
+            <div class="form-step active" data-step="1">
+                <h3 data-splitting>🙌<br>Hi There!</h3>
+                <p>Glad to see you here,<br>Would love to know some<br>things about the project.</p>
+                <button class="next-step">Let's Go! <img src="images/arrow-right.svg" alt=">"></button>
+            </div>
+            
+            <div class="form-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="progress-text">1 / 8</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/2.9.7/barba.umd.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/page-transition.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>

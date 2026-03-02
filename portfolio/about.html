@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Abhishek Jha</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css">
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css">
+    <style>
+        /* Additional styles for about page */
+        .about-hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 80px;
+        }
+        
+        .about-hero-content {
+            max-width: 800px;
+        }
+        
+        .about-hero h1 {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+        
+        .about-hero-image {
+            margin: 50px auto;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .about-hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .about-description {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .experience {
+            padding: 100px 10%;
+            background-color: var(--light-gray);
+        }
+        
+        .experience h2 {
+            font-size: 3rem;
+            margin-bottom: 50px;
+        }
+        
+        .experience-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 30px;
+        }
+        
+        .experience-item {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .experience-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .experience-year {
+            font-size: 0.9rem;
+            color: var(--dark-gray);
+            margin-bottom: 10px;
+        }
+        
+        .experience-role {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .experience-company {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+        }
+        
+        .experience-description {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--dark-gray);
+        }
+        
+        .skills-section {
+            padding: 100px 10%;
+        }
+        
+        .skills-section h2 {
+            font-size: 3rem;
+            margin-bottom: 50px;
+        }
+        
+        .skill-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 50px;
+        }
+        
+        .skill-category {
+            margin-bottom: 30px;
+        }
+        
+        .skill-category h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .skill-category h3::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--accent-color);
+        }
+        
+        .skill-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        
+        .skill-item {
+            font-size: 1rem;
+            color: var(--dark-gray);
+        }
+    </style>
+</head>
+<body data-scroll-container>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <div class="page-transition"></div>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">Abhishek Jha</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Socials</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://behance.net" target="_blank" rel="noopener">Behance</a></li>
+                        <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+                        <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a></li>
+                        <li><a href="https://dribbble.com" target="_blank" rel="noopener">Dribbble</a></li>
+                    </ul>
+                </li>
+                <li><a href="mailto:hi@abhishekjha.me" class="contact-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-hero" data-scroll-section>
+            <div class="about-hero-content">
+                <h1 data-splitting>About Me</h1>
+                <div class="about-hero-image" data-scroll data-scroll-speed="1">
+                    <img src="https://abhishekjha.me/headshot.d60093a0.JPG" alt="Abhishek Jha">
+                </div>
+                <p class="about-description" data-scroll data-scroll-speed="0.5">
+                    I'm Abhishek Jha, a visual designer with a passion for creating beautiful, functional interfaces. I specialize in UI/UX design, web development, and branding.
+                </p>
+                <a href="mailto:hi@abhishekjha.me" class="contact-button" data-scroll data-scroll-speed="0.7">
+                    <img src="images/contact-icon.svg" alt="Contact"> Contact
+                </a>
+            </div>
+        </section>
+
+        <section class="experience" data-scroll-section>
+            <h2 data-scroll data-scroll-speed="1" data-splitting>Experience</h2>
+            <div class="experience-list">
+                <div class="experience-item" data-scroll data-scroll-speed="0.3">
+                    <p class="experience-year">2021 - Present</p>
+                    <h3 class="experience-role">Senior UI/UX Designer</h3>
+                    <p class="experience-company">Freelance</p>
+                    <p class="experience-description">Working with clients worldwide to create beautiful, functional interfaces for web and mobile applications.</p>
+                </div>
+                <div class="experience-item" data-scroll data-scroll-speed="0.5">
+                    <p class="experience-year">2019 - 2021</p>
+                    <h3 class="experience-role">UI/UX Designer</h3>
+                    <p class="experience-company">Design Studio</p>
+                    <p class="experience-description">Designed user interfaces for various clients, focusing on creating intuitive and visually appealing experiences.</p>
+                </div>
+                <div class="experience-item" data-scroll data-scroll-speed="0.7">
+                    <p class="experience-year">2017 - 2019</p>
+                    <h3 class="experience-role">Web Designer</h3>
+                    <p class="experience-company">Creative Agency</p>
+                    <p class="experience-description">Created website designs and implemented them using HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="experience-item" data-scroll data-scroll-speed="0.9">
+                    <p class="experience-year">2015 - 2017</p>
+                    <h3 class="experience-role">Graphic Designer</h3>
+                    <p class="experience-company">Marketing Firm</p>
+                    <p class="experience-description">Designed marketing materials, including brochures, posters, and social media graphics.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section" data-scroll-section>
+            <h2 data-scroll data-scroll-speed="1" data-splitting>Skills</h2>
+            <div class="skill-categories">
+                <div class="skill-category" data-scroll data-scroll-speed="0.3">
+                    <h3>Design</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">UI/UX Design</li>
+                        <li class="skill-item">Web Design</li>
+                        <li class="skill-item">Mobile Design</li>
+                        <li class="skill-item">Branding</li>
+                        <li class="skill-item">Wireframing</li>
+                        <li class="skill-item">Prototyping</li>
+                    </ul>
+                </div>
+                <div class="skill-category" data-scroll data-scroll-speed="0.5">
+                    <h3>Development</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">HTML/CSS</li>
+                        <li class="skill-item">JavaScript</li>
+                        <li class="skill-item">React</li>
+                        <li class="skill-item">Vue.js</li>
+                        <li class="skill-item">GSAP</li>
+                        <li class="skill-item">Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category" data-scroll data-scroll-speed="0.7">
+                    <h3>Tools</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">Figma</li>
+                        <li class="skill-item">Adobe XD</li>
+                        <li class="skill-item">Photoshop</li>
+                        <li class="skill-item">Illustrator</li>
+                        <li class="skill-item">After Effects</li>
+                        <li class="skill-item">VS Code</li>
+                    </ul>
+                </div>
+                <div class="skill-category" data-scroll data-scroll-speed="0.9">
+                    <h3>Soft Skills</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">Communication</li>
+                        <li class="skill-item">Problem Solving</li>
+                        <li class="skill-item">Time Management</li>
+                        <li class="skill-item">Teamwork</li>
+                        <li class="skill-item">Adaptability</li>
+                        <li class="skill-item">Creativity</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" data-scroll-section>
+            <h2 data-scroll data-scroll-speed="1" data-splitting>Let's Talk</h2>
+            <p class="contact-subtitle" data-scroll data-scroll-speed="1.2">Connect About the Next big thing</p>
+            
+            <div class="contact-options" data-scroll data-scroll-speed="0.5">
+                <a href="mailto:hi@abhishekjha.me" class="contact-option" data-scroll data-scroll-speed="0.7">
+                    <span>Write a Message</span>
+                </a>
+                <a href="javascript:void(0)" class="contact-option" id="discuss-project" data-scroll data-scroll-speed="0.9">
+                    <span>Discuss Project</span>
+                </a>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://www.behance.net/abhishek_jha" target="_blank" rel="noopener" class="social-link" data-scroll data-scroll-speed="0.3">
+                    <span>Behance @abhishek_jha</span>
+                    <img src="images/behance.svg" alt="Behance">
+                </a>
+                <a href="https://www.instagram.com/design_flavorist/" target="_blank" rel="noopener" class="social-link" data-scroll data-scroll-speed="0.5">
+                    <span>Instagram @design_flavorist</span>
+                    <img src="images/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://twitter.com/designflavorist" target="_blank" rel="noopener" class="social-link" data-scroll data-scroll-speed="0.7">
+                    <span>Twitter @designflavorist</span>
+                    <img src="images/twitter.svg" alt="Twitter">
+                </a>
+                <a href="https://dribbble.com/abhishek_jha" target="_blank" rel="noopener" class="social-link" data-scroll data-scroll-speed="0.9">
+                    <span>Dribbble @abhishek_jha</span>
+                    <img src="images/dribbble.svg" alt="Dribbble">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer data-scroll-section>
+        <div class="footer-content" data-scroll data-scroll-speed="0.5">
+            <p class="copyright">©2025 Abhishek Jha, All rights reserved • <a href="#" id="credits-toggle">Credits</a></p>
+            <a href="#" class="archive-link">2020 Portfolio</a>
+        </div>
+        
+        <div class="credits-panel">
+            <div class="credits-content">
+                <div class="credits-close">
+                    <img src="images/close.svg" alt="Close">
+                </div>
+                <div class="credits-section">
+                    <h3 data-splitting>Technologies</h3>
+                    <p><a href="https://github.com/locomotivemtl/locomotive-scroll" target="_blank" rel="noopener">Locomotive Scroll,</a> <a href="https://highway.js.org/" target="_blank" rel="noopener">Highway.js,</a> <a href="https://greensock.com/gsap" target="_blank" rel="noopener">GSAP</a></p>
+                </div>
+                <div class="credits-section">
+                    <h3 data-splitting>Fonts</h3>
+                    <p><a href="http://collletttivo.it/" target="_blank" rel="noopener">Mazius,</a> <a href="https://www.tinkov.info/" target="_blank" rel="noopener">Gilroy</a></p>
+                </div>
+                <div class="credits-section">
+                    <h3 data-splitting>Designed and Developed By</h3>
+                    <p><a href="index.html">Abhishek Jha</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="contact-form-modal">
+        <div class="modal-close">
+            <img src="images/close.svg" alt="Close">
+        </div>
+        <div class="modal-content">
+            <div class="form-step active" data-step="1">
+                <h3 data-splitting>🙌<br>Hi There!</h3>
+                <p>Glad to see you here,<br>Would love to know some<br>things about the project.</p>
+                <button class="next-step">Let's Go! <img src="images/arrow-right.svg" alt=">"></button>
+            </div>
+            
+            <div class="form-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="progress-text">1 / 8</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/page-transition.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>

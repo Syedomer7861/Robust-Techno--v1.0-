@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link href="/css/hamburgers.css" rel="stylesheet" />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/Robust Tech logo-lowsize02.png"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "G4D1aPUf-K5iRNEyA",
+        });
+      })();
+    </script>
+    <title>Robust-Techno | Contact-Us</title>
+    <style>
+      :root {
+        --primary: #66cab1;
+        --light-bg: #f8fafc;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--primary);
+      }
+
+      header p {
+        margin-top: 0.5rem;
+        font-size: 1.1rem;
+        color: #4b5563;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      @media (min-width: 768px) {
+        .container {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      .contact-form,
+      .contact-info {
+        background: white;
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      }
+
+      form input,
+      form textarea {
+        width: 100%;
+        padding: 0.75rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid #d1d5db;
+        border-radius: 0.5rem;
+      }
+
+      form input:focus,
+      form textarea:focus {
+        border-color: var(--primary);
+        outline: none;
+      }
+
+      form button {
+        background: var(--primary);
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      form button:hover {
+        background: #86efac;
+      }
+
+      .info-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+
+      .info-item i {
+        font-size: 1.2rem;
+        margin-right: 0.75rem;
+        color: var(--primary);
+      }
+      .info-item a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        margin-right: 0.75rem;
+        color: var(--primary);
+      }
+
+      .map {
+        margin-top: 2rem;
+        height: 300px;
+        width: 100%;
+        border: 0;
+        border-radius: 1rem;
+        cursor: pointer;
+      }
+      #form-message {
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: 8px;
+        font-weight: 500;
+        text-align: center;
+        transition: opacity 0.3s ease;
+      }
+
+      #form-message.success {
+        background-color: #dcfce7;
+        color: #166534;
+        border: 1px solid #86efac;
+      }
+
+      #form-message.error {
+        background-color: #fee2e2;
+        color: #991b1b;
+        border: 1px solid #fca5a5;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav class="navbar">
+          <div class="logo">
+            <a href="/index.html">
+              <img src="/assets/Robust Tech logo-01.png" alt="Robust-Techno" />
+            </a>
+          </div>
+          <button
+            class="hamburger hamburger--spin"
+            type="button"
+            aria-label="toggle menu"
+            onclick="toggleMenu()"
+          >
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+
+          <div class="menu" id="navMenu">
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/About-us.html">About Us</a></li>
+              <li><a href="/Contact-Us.html" class="active">Contact Us</a></li>
+              <li><a href="/Tech-Media.html">Tech-Media</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div class="contact-hero-sec">
+        <div class="bg-animation">
+          <spline-viewer
+            class="layer-3d"
+            url="https://prod.spline.design/NUyef-bcYf0aUmj2/scene.splinecode"
+          >
+          </spline-viewer>
+          <div class="cover">
+            <p>Robust Techno</p>
+          </div>
+        </div>
+        <h1 class="typing-heading">
+          <span>C</span>
+          <span>o</span>
+          <span>n</span>
+          <span>t</span>
+          <span>a</span>
+          <span>c</span>
+          <span>t</span>
+          <span>-</span>
+          <span>U</span>
+          <span>s</span>
+        </h1>
+        <p>
+          As one of the world's largest ITService Providers, we are ready to
+          help.
+        </p>
+        <i class="ri-arrow-down-circle-fill"></i>
+      </div>
+
+      <!-- Feedback Message Box -->
+      <section class="container">
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h2>Send a Message</h2>
+          <form id="contactForm">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Your message..."
+              required
+            ></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+
+          <!-- Feedback Message -->
+          <div id="form-message"></div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h2>Reach Us</h2>
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <span
+              ><a href="mailto:robusttechuae@gmail.com"
+                >robusttechuae@gmail.com</a
+              ></span
+            >
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <span><a href="tel:+971 ">+1 (234) 567-8901</a></span>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>123 Media Lane, Creativetown, USA</span>
+          </div>
+
+          <!-- Map -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115329.73968957852!2d55.443547868267935!3d25.4029907387632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5764dd8fbe79%3A0xcda090de6445a819!2sAjman!5e0!3m2!1sen!2sae!4v1746662878580!5m2!1sen!2sae"
+            width="400"
+            height="300"
+            allowfullscreen=""
+            title="Google Maps"
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- Cal inline embed code begins -->
+      <section class="meeting-sec">
+        <h2>Let's Connect and Build Something Great Together</h2>
+        <p>
+          Have questions or ideas? We're all ears. Let's chat and make things
+          happen.
+        </p>
+        <div id="my-cal-inline"></div>
+        <script type="text/javascript">
+          (function (C, A, L) {
+            let p = function (a, ar) {
+              a.q.push(ar);
+            };
+            let d = C.document;
+            C.Cal =
+              C.Cal ||
+              function () {
+                let cal = C.Cal;
+                let ar = arguments;
+                if (!cal.loaded) {
+                  cal.ns = {};
+                  cal.q = cal.q || [];
+                  d.head.appendChild(d.createElement("script")).src = A;
+                  cal.loaded = true;
+                }
+                if (ar[0] === L) {
+                  const api = function () {
+                    p(api, arguments);
+                  };
+                  const namespace = ar[1];
+                  api.q = api.q || [];
+                  if (typeof namespace === "string") {
+                    cal.ns[namespace] = cal.ns[namespace] || api;
+                    p(cal.ns[namespace], ar);
+                    p(cal, ["initNamespace", namespace]);
+                  } else p(cal, ar);
+                  return;
+                }
+                p(cal, ar);
+              };
+          })(window, "https://app.cal.com/embed/embed.js", "init");
+          Cal("init", "30min", { origin: "https://cal.com" });
+
+          Cal.ns["30min"]("inline", {
+            elementOrSelector: "#my-cal-inline",
+            config: { layout: "month_view" },
+            calLink: "robust-tech-hf66cw/30min",
+          });
+
+          Cal.ns["30min"]("ui", {
+            hideEventTypeDetails: false,
+            layout: "month_view",
+          });
+        </script>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <iframe
+        src="https://my.spline.design/tvatimedoor-sW4r1r32wGnVXDeL8zxjJUzT/"
+        frameborder="0"
+        width="100%"
+        height="100%"
+        title="3D robust"
+      ></iframe>
+
+      <div class="cover">
+        <div class="text">
+          <p>
+            Designed & Developed by
+            <a
+              href="https://syed-portfolio-one.vercel.app/"
+              target="_blank"
+              rel="noopener"
+              >Syed Omer 😊</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-link">
+        <div class="logo">
+          <a href="/index.html"
+            ><img src="/assets/Robust Tech logo-01.png" alt="Robust-Techno"
+          /></a>
+        </div>
+
+        <div class="link footer-section">
+          <h5 class="footer-toggle">Quick Links</h5>
+          <div class="footer-content">
+            <a href="/index.html">Home</a>
+            <a href="/About-us.html">About Us</a>
+            <a href="/Contact-Us.html">Contact Us</a>
+            <a href="/Tech-Media.html">Tech-Media</a>
+          </div>
+        </div>
+
+        <div class="service footer-section">
+          <h5 class="footer-toggle">Services</h5>
+          <div class="footer-content">
+            <a href="#what-we-offer">Reselling</a>
+            <a href="#what-we-offer">IT Consulting Services</a>
+            <a href="#what-we-offer">Managed IT Services</a>
+            <a href="#what-we-offer">Technical Support</a>
+            <a href="/services.html">Website Development</a>
+            <a href="/services.html">Digital Marketing</a>
+            <a href="/services.html">Graphic Design</a>
+            <a href="/services.html">SEO Services</a>
+            <a href="/services.html">UI/UX Design</a>
+            <a href="/services.html">Photography</a>
+          </div>
+        </div>
+
+        <div class="contact footer-section">
+          <h5 class="footer-toggle">Contact Us</h5>
+          <div class="footer-content">
+            <p>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+919876543210"> +91 9876543210</a>
+            </p>
+            <p>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:info@robusttechno.com">info@robusttechno.com</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="social-link footer-section">
+          <h5 class="footer-toggle">Social Links</h5>
+          <div class="footer-content">
+            <a
+              href="https://www.facebook.com/robusttechno"
+              target="_blank"
+              rel="noopener"
+              ><i class="fab fa-facebook-f"></i>Facebook</a
+            >
+            <a
+              href="https://www.instagram.com/robusttechno/"
+              target="_blank"
+              rel="noopener"
+              ><i class="fab fa-instagram"></i>Instagram</a
+            >
+            <a
+              href="https://twitter.com/robusttechno"
+              target="_blank"
+              rel="noopener"
+              ><i class="fab fa-twitter"></i>Twitter</a
+            >
+          </div>
+        </div>
+
+        <div class="address footer-section">
+          <h5 class="footer-toggle">Address</h5>
+          <div class="footer-content">
+            <p>
+              123 Main Street,<br />
+              City, <br />
+              State, <br />
+              Country
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.10.15/build/spline-viewer.js"
+    ></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("G4D1aPUf-K5iRNEyA"); // replace this with your actual user ID
+      })();
+
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const form = this;
+          const msg = document.getElementById("form-message");
+
+          msg.style.display = "block";
+          msg.textContent = "Sending...";
+          msg.style.backgroundColor = "#fef3c7";
+          msg.style.color = "#92400e";
+          msg.style.padding = "1rem";
+          msg.style.borderRadius = "8px";
+          msg.style.marginTop = "1rem";
+
+          emailjs.sendForm("service_6er3b2c", "template_1fpvkus", form).then(
+            () => {
+              showMessage("Message sent successfully!", "success");
+              form.reset();
+            },
+            (error) => {
+              console.error("EmailJS error:", error);
+              showMessage("Failed to send message. Please try again.", "error");
+            }
+          );
+
+          function showMessage(text, type) {
+            msg.textContent = text;
+            msg.style.backgroundColor =
+              type === "success" ? "#dcfce7" : "#fee2e2";
+            msg.style.color = type === "success" ? "#166534" : "#991b1b";
+            msg.style.border = "1px solid";
+            msg.style.borderColor = type === "success" ? "#86efac" : "#fca5a5";
+
+            setTimeout(() => {
+              msg.style.opacity = 0;
+              setTimeout(() => {
+                msg.style.display = "none";
+                msg.style.opacity = 1;
+              }, 500);
+            }, 4000);
+          }
+        });
+    </script>
+  </body>
+</html>
